@@ -1,0 +1,37 @@
+@use '../../../styles/variables' as *;
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: $color-bg;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        li a {
+            color: $color-text;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
+    span {
+        color: $color-accent;
+        font-weight: bold;
+    }
+}
+
+.btn-contact {
+    background-color: $color-accent;
+    color: $color-accent-2;
+    border: 2px solid $color-accent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+}
