@@ -1,0 +1,47 @@
+@use 'variables' as *;
+@mixin container {
+    max-width: $container-max;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin section-base {
+    padding: $section-padding;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin respond-to($bp) {
+    @if $bp==mobile {
+        @media (max-width: #{$bp-mobile}) {
+            @content;
+        }
+    }
+    @if $bp==tablet {
+        @media (max-width: #{$bp-tablet}) {
+            @content;
+        }
+    }
+    @if $bp==desktop {
+        @media (max-width: #{$bp-desktop}) {
+            @content;
+        }
+    }
+}
+
+@mixin accent-glow {
+    box-shadow: 0 0 20px rgba(0, 245, 196, 0.3);
+}
+
+@mixin text-gradient {
+    background: linear-gradient(135deg, $color-accent, $color-accent-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

@@ -1,0 +1,21 @@
+// === COULEURS ===
+$color-bg: #0a0a0f;
+$color-bg-surface: #111118;
+$color-accent: #00f5c4; // Cyan électrique
+$color-accent-2: #7b5ea7; // Violet tech
+$color-text: #e8e8f0;
+$color-text-muted: #6b6b8a;
+$color-border: rgba(255, 255, 255, 0.08);
+// === TYPOGRAPHIE ===
+$font-display: 'Space Grotesk',
+sans-serif; // Titres
+$font-body: 'Inter',
+sans-serif; // Corps
+// === SPACING ===
+$section-padding: 120px 0;
+$container-max: 1200px;
+// === BREAKPOINTS ===
+$bp-mobile: 576px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-wide: 1440px;

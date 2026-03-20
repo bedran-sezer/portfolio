@@ -1,0 +1,65 @@
+@use 'styles/variables' as *;
+@use 'styles/mixins' as *;
+@use 'styles/animations';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background-color: $color-bg;
+    color: $color-text;
+    font-family: $font-body;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-display;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+a {
+    color: $color-accent;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+::selection {
+    background: rgba(0, 245, 196, 0.2);
+    color: $color-accent;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-bg;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-accent;
+    border-radius: 2px;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
