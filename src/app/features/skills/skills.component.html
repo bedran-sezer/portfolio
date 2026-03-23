@@ -2,10 +2,13 @@
     <h2>Mes Compétences</h2>
     <div class="categories-grid">
         <div class="category-card" *ngFor="let category of categories">
-            {{ category.name }}
-            <span *ngFor="let skill of category.skills">
-                {{ skill }}
-            </span>
+            <h3>{{ category.name }}</h3>
+
+            <div class="skills-list">
+                <span class="skill-tag" *ngFor="let skill of category.skills">
+      {{ skill }}
+    </span>
+            </div>
         </div>
 
     </div>
