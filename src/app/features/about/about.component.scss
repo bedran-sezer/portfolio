@@ -1,0 +1,56 @@
+                                    @use '../../../styles/variables' as *;
+                                    section {
+                                        padding: 120px 0;
+                                        .about-container {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1fr; // 2 colonnes égales
+                                            gap: 60px;
+                                            max-width: 1200px;
+                                            margin: 0 auto;
+                                            padding: 0 24px;
+                                        }
+                                        .avatar-placeholder {
+                                            width: 300px;
+                                            height: 300px;
+                                            align-items: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            font-size: 6rem;
+                                            border: 2px solid $color-accent;
+                                            border-radius: 50%;
+                                        }
+                                        .about-content {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            gap: 24px;
+                                            h2 {
+                                                font-size: clamp(2rem, 4vw, 3rem);
+                                                color: $color-text;
+                                            }
+                                            p {
+                                                color: $color-text-muted;
+                                                line-height: 1.8;
+                                                text-align: justify;
+                                            }
+                                        }
+                                        .about-info {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 12px;
+                                            .info-item {
+                                                display: flex;
+                                                gap: 12px;
+                                                align-items: flex-start;
+                                            }
+                                            .info-label {
+                                                font-weight: bold;
+                                                color: $color-accent;
+                                                min-width: 120px; // largeur fixe pour aligner tous les labels
+                                                flex-shrink: 0; // empêche le label de se réduire
+                                            }
+                                            .info-value {
+                                                color: $color-text;
+                                            }
+                                        }
+                                    }
