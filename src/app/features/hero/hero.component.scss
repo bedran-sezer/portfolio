@@ -1,0 +1,58 @@
+                                    @use '../../../styles/variables' as *;
+                                    section {
+                                        height: 100vh;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        .hero-content {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            gap: 16px;
+                                            span {
+                                                color: $color-accent;
+                                                letter-spacing: 2px;
+                                            }
+                                            h1 {
+                                                font-size: clamp(3rem, 6vw, 5rem);
+                                                color: $color-text;
+                                            }
+                                            h2 {
+                                                font-size: clamp(1.5rem, 3vw, 2rem);
+                                                color: $color-text-muted;
+                                            }
+                                            p {
+                                                color: $color-text-muted;
+                                                max-width: 600px;
+                                            }
+                                            .hero-cta {
+                                                display: flex;
+                                                gap: 16px;
+                                                margin-top: 16px;
+                                                .btn-primary {
+                                                    padding: 12px 28px;
+                                                    background-color: $color-accent;
+                                                    color: $color-bg;
+                                                    border-radius: 4px;
+                                                    font-weight: bold;
+                                                    transition: opacity 0.2s ease;
+                                                    &:hover {
+                                                        opacity: 0.85;
+                                                    }
+                                                }
+                                                .btn-outline {
+                                                    padding: 12px 28px;
+                                                    background-color: transparent;
+                                                    color: $color-text;
+                                                    border: 2px solid $color-accent;
+                                                    border-radius: 4px;
+                                                    font-weight: bold;
+                                                    transition: background-color 0.2s ease, color 0.2s ease;
+                                                    &:hover {
+                                                        background-color: $color-accent;
+                                                        color: $color-bg;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
